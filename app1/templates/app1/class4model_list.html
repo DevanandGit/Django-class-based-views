@@ -1,0 +1,15 @@
+<h1>This visible the contents on database.</h1>
+{% comment %} for objects in loop use same name as model class name {% endcomment %}
+{% for data in class5 %}  
+    <ul>
+        <li><a href="/class6/{{data.id}}">{{data.name}} {{data.roll_no}}</a>
+        <ul>
+            <li><a href="/class7/{{data.id}}">Update Information</a></li>
+            <li><a href="/class8/{{data.id}}">Delete</a></li>
+        </ul>
+        </li>
+    </ul>   
+{% endfor %}
+
+<a href="{% url 'app1:Home' %}">Home</a><br>
+<a href="{% url 'app1:class4' %}">Add new</a>

@@ -1,0 +1,13 @@
+*-- Link between template - template can be done by the value of 'app_name=***' 'name=***' specified inside the urls.py
+example--
+        <!-- <a href="{% url 'app1:Home' %}">Home</a><br> -->
+
+**--- Can access the items in data base by primary key using the url in the urls.py 
+example--
+        <!-- <li><a href="/class8/{{data.id}}"> -->
+            --here 'data' is the name of objects that we iterate each time and 'data.id' gives the primary key of that particular object.
+
+**-- For the template that renders for viewing the objects with primary key, we need to mention it like {{particular classname of that model}}
+example--
+<!-- {{class4model}} -->
+            --it is the class containing the all objects of that model.
